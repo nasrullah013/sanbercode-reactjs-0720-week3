@@ -1,0 +1,29 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+.container {
+    margin: 200px auto;
+    width: 800px;
+
+}
+
+table {
+    width: 100%;
+    border: 1px solid;
+    text-align: center;
+    padding: 0px;
+}
+
+th {
+    background-color: #AAA;
+    padding: 2px 1px;
+}
+
+td {
+    background-color: #FF7F50;
+    text-align: justify;
+    padding: 2px 1px;
+}
+
