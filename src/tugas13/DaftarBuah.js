@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import Nama from './Nama'
-import Harga from './Harga'
-import Berat from './Berat'
 import './DaftarBuah.css'
 
 
@@ -43,7 +40,9 @@ class DaftarBuah extends Component {
         event.preventDefault()
 
         let input = this.state.input
-        if (input['nama'].replace(/\s/g, '') !== '' && input['harga'].toString().replace(/\s/g, '') !== "" && input['berat'].toString().replace(/\s/g, '' !== "")) 
+        if (input['nama'].replace(/\s/g, '') !== '' && 
+        input['harga'].toString().replace(/\s/g, '') !== "" && 
+        input['berat'].toString().replace(/\s/g, '' !== "")) 
             {
                 let newDaftarBuah = this.state.dataHargaBuah
                 let index = this.state.indexOfFrom
@@ -113,10 +112,10 @@ handleDelete(event) {
                                 this.state.dataHargaBuah.map((db, index) =>{
                                     return (
                                         <tr key={index}>
-                                            <td>{index+1}</td>                                            
-                                            <Nama nama={db.nama}/>
-                                            <Harga harga={db.harga}/>
-                                            <Berat berat={db.berat}/>
+                                            <td>{index+1}</td> 
+                                            <td>{db.nama}</td>                                            
+                                            <td>{db.harga}</td>                                            
+                                            <td>{db.berat}</td>                                            
                                             <td>
                                                 <div style={{textAlign: "center"}}>
                                                 <button onClick={this.handleEdit} value={index}>Edit</button>
