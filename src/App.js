@@ -1,24 +1,28 @@
 import React from 'react';
 import './App.css';
-import DaftarBuah from './tugas14/DaftarBuah'
+import Routers from './tugas15/Router'
+import {BrowserRouter as Router} from "react-router-dom"
+
+
+
+
 
 function App() {
+
+
   return (
+    
     <div>
-      {/* Tugas11 */}
-        {/* <DaftarBuah /> */}
 
-        {/* Tugas12 */}
-        {/* <Clock start={100}/> */}
-
-        {/* tugas13 */}
-        {/* <DaftarBuah /> */}
-
-        {/* tugas4 */}
-        <DaftarBuah />
+      <Router>
+        <Routers/>
+      </Router>
 
     </div>
-  )
+    
+
+  );
+
 }
 
 export default App;

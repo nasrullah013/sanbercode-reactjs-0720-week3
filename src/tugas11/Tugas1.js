@@ -13,7 +13,8 @@ var dataHargaBuah = [
     {nama : "Mangga", harga : 30000, berat : 500}
 ]
 
-class DaftarBuah extends Component {
+class Tugas1
+extends Component {
     render() {
         return (
             <>
@@ -47,5 +48,5 @@ class DaftarBuah extends Component {
     }
 }
 
-export default DaftarBuah
+export default Tugas1
 

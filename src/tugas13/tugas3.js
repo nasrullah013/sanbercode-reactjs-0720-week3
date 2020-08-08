@@ -3,7 +3,7 @@ import './DaftarBuah.css'
 
 
 
-class DaftarBuah extends Component {
+class Tugas3 extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -147,5 +147,5 @@ handleDelete(event) {
     }
 }
 
-export default DaftarBuah
+export default Tugas3
 
